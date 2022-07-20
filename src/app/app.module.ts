@@ -32,7 +32,6 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     BrowserAnimationsModule
   ],
   exports: [
-    SpinnerComponent,
     MaterialModule
   ],
   providers: [

@@ -13,7 +13,6 @@ export class PessoasComponent implements OnInit {
   public pessoa: any;
 
   public msgs: any = [];
-
   public mobileQuery?: MediaQueryList;
 
   public matches: Array<any> = [{name: 'Match 1'},{name: 'Match 2'},{name: 'Match 3'}];

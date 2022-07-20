@@ -8,6 +8,8 @@
   align-items: center;
   display: table-cell;
   vertical-align: middle;
+  z-index: 99999999;
+  background-color: white;
 }
 .unit {
   text-align: center;
