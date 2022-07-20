@@ -1,0 +1,27 @@
+<div class="body">
+    <div class="login-form">
+        <div class="content">
+            <h2>Login page</h2>
+            <!-- <h2>Entrar no Vai dar namoro</h2> -->
+            <div>
+                <div class="input">
+                    Email:
+                    <div>
+                        <fa-icon [icon]="icons.carta" class="into"></fa-icon>
+                        <input type="text" #email>
+                    </div>
+                </div>
+                <div class="input">
+                    Senha:
+                    <div>
+                        <fa-icon [icon]="icons.chave" class="into"></fa-icon>
+                        <input type="password" #pass>
+                    </div>
+                </div>
+                <div class="input">
+                    <button (click)="login(email.value, pass.value)" (keyup)="login(email.value, pass.value)"> Entrar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

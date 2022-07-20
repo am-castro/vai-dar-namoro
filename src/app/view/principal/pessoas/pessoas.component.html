@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="pessoas">
+    <img [src]="pessoa.foto" class="foto">
+    <div class="cantada">
+      <p>
+        {{ pessoa.cantada }}
+      </p>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-around center" class="actionButtons">
+    <button mat-button class="color-1" style="display: hidden !important;"> <fa-icon [icon]="icons.new"></fa-icon> </button>
+    <button mat-fab class="color-0" style="margin-top: -70px; width: 75px; height: 75px;"> <fa-icon [icon]="icons.messages"></fa-icon> </button>
+    <button mat-button class="color-1"> <fa-icon [icon]="icons.menu"></fa-icon> </button>
+  </div>
+</div>
