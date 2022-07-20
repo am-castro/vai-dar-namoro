@@ -4,13 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "vdn": {
-      "i18n":{
-        "sourceLocale": "en-US",
-        "locales": {
-          "pt": "src/locale/messages.pt.xlf",
-          "en": "src/locale/messages.en.xlf"
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -48,10 +41,9 @@
                   "maximumWarning": "6kb"
                 }
               ],
-              "localize": ["pt"],
               "optimization": true,
               "outputHashing": "all",
-              "outputPath": "dist/",
+              "outputPath": "dist/vdn",
               "sourceMap": false,
               "namedChunks": false,
               "aot": true,
@@ -64,56 +56,6 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
-            },
-            "production-en": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-              "localize": ["en"],
-              "optimization": true,
-              "outputHashing": "all",
-              "outputPath": "dist/en",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "i18nMissingTranslation": "error"
-            },
-            "production-pt": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-              "localize": ["pt"],
-              "optimization": true,
-              "outputHashing": "all",
-              "outputPath": "dist/pt",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "i18nMissingTranslation": "error"
             },
             "development": {
               "buildOptimizer": false,
