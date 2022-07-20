@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
 
-  API: 'http://localhost:3000/',
+  API: 'https://vaidarnamoro-back.herokuapp.com/',
   API_PEOPLES: 'peoples',
   API_LOGS: 'logs'
 };

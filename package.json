@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "dev": "ng build --dev",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -13,7 +14,7 @@
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
-    "@angular/core": "^14.0.0",
+    "@angular/core": "^14.0.6",
     "@angular/flex-layout": "^14.0.0-beta.40",
     "@angular/forms": "^14.0.0",
     "@angular/material": "^14.0.5",
