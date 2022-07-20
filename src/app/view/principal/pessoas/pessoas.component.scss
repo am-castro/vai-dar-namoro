@@ -83,7 +83,7 @@ fa-icon{
       margin-bottom: 80px;
     }
     .message{
-      padding: 5px 15px;
+      padding: 5px 50px;
       margin: 15px;
       p{
         width: 300px;
@@ -98,6 +98,11 @@ fa-icon{
       flex-direction: row-reverse;
       p{
         border-radius: 10px 10px 0 10px;
+        word-wrap: break-word;
+      }
+      img{
+        position: absolute;
+        margin-right: -50px;
       }
     }
     .other{

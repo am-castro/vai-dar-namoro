@@ -53,6 +53,10 @@ export class UserService {
     return this._ticket.getName();
   }
 
+  getFoto() {
+    return this._ticket.getFoto();
+  }
+
   getUserID() {
     return this._ticket.getUserID();
   }

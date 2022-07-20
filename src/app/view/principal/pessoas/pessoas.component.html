@@ -35,7 +35,7 @@
         <p>Uh, he's from space, he came here to steal a necklace from a wizard.</p>
       </div>
       <div class="message me" *ngFor="let msg of msgs">
-        <p>{{ msg.text }}</p>
+        <p>{{ msg.text }}</p><img [src]="msg.foto" width="40px" height="40px" style="border-radius: 30px;">
       </div>
     </div>
     <div class="send" fxLayout="row" fxLayoutAlign="space-around center">

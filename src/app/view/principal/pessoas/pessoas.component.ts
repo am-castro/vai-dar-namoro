@@ -30,6 +30,6 @@ export class PessoasComponent implements OnInit {
   }
 
   onSend(texto: string){
-    this.msgs.push({text: texto});
+    this.msgs.push({text: texto, foto: this._user.getFoto()});
   }
 }
