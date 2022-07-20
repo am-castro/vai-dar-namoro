@@ -40,10 +40,10 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     MaterialModule,
     SnackbarComponent,
     { provide: LOCALE_ID,
-      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en-US'
+      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'pt-BR'
     },
     { provide: MAT_DATE_LOCALE,
-      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en-US'
+      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'pt-BR'
     }
   ],
   bootstrap: [AppComponent]
