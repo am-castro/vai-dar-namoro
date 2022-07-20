@@ -11,7 +11,10 @@ import { PessoasService } from 'src/app/component/services/pessoas/pessoas.servi
 export class PessoasComponent implements OnInit {
   public icons = {config: faGear, new: faPlus, menu: faBars, haveMessage: faCommentDots, messages: faComments}
   public pessoa: any;
-  public pessoaAtual: any;
+
+  public mobileQuery?: MediaQueryList;
+
+  public matches: Array<any> = [{name: 'Match 1'},{name: 'Match 2'},{name: 'Match 3'}];
 
   constructor(
     private _pessoas: PessoasService,
@@ -20,8 +23,6 @@ export class PessoasComponent implements OnInit {
       this._pessoas.getSpecifiedPeople(2).subscribe(retorno=>{
         this.pessoa = retorno[0];
       });
-      
-      this.pessoaAtual = this._user.getAutenticadoUser();
     }
 
   ngOnInit() {

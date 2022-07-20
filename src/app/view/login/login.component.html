@@ -1,27 +1,35 @@
 <div class="body">
     <div class="login-form">
         <div class="content">
-            <h2>Login page</h2>
+            <h2 i18n>Área de Login</h2>
             <!-- <h2>Entrar no Vai dar namoro</h2> -->
             <div>
                 <div class="input">
-                    Email:
+                    <span i18n>Email</span>:
                     <div>
                         <fa-icon [icon]="icons.carta" class="into"></fa-icon>
                         <input type="text" #email>
                     </div>
                 </div>
                 <div class="input">
-                    Senha:
+                    <span i18n>Senha</span>:
                     <div>
                         <fa-icon [icon]="icons.chave" class="into"></fa-icon>
                         <input type="password" #pass>
                     </div>
                 </div>
                 <div class="input">
-                    <button (click)="login(email.value, pass.value)" (keyup)="login(email.value, pass.value)"> Entrar </button>
+                    <button (click)="login(email.value, pass.value)" (keyup)="login(email.value, pass.value)" class="button"> Entrar </button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="bottom-options" fxLayout="row" fxLayoutAlign="space-between center" >
+        <span>Versão: {{ version }}</span>
+        <button mat-icon-button [matMenuTriggerFor]="languages"><fa-icon [icon]="icons.language"></fa-icon></button>
+    </div>
 </div>
+<mat-menu #languages="matMenu" yPosition="above">
+    <button mat-menu-item (click)="lang('pt')">Português</button>
+    <button mat-menu-item (click)="lang('en-US')">Inglês</button>
+</mat-menu>

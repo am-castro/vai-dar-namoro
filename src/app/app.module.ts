@@ -1,6 +1,6 @@
 import { SnackbarComponent } from './view/shared/snackbar/snackbar.component';
 import { MaterialModule } from './material-module';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +12,7 @@ import { LoginComponent } from './view/login/login.component';
 import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,13 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [
     SpinnerComponent,
     MaterialModule,
-    SnackbarComponent
+    SnackbarComponent,
+    { provide: LOCALE_ID,
+      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en-US'
+    },
+    { provide: MAT_DATE_LOCALE,
+      useValue: sessionStorage.getItem('lang') ? sessionStorage.getItem('lang') : 'en-US'
+    }
   ],
   bootstrap: [AppComponent]
 })

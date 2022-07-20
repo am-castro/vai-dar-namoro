@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
 
+  version: '1.0.1',
   API: 'http://localhost:3000/',
   API_PEOPLES: 'peoples',
   API_LOGS: 'logs'

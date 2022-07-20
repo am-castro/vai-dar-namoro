@@ -43,3 +43,36 @@ fa-icon{
 .color-1{
     color: rgb(105, 105, 105);
 }
+.chat{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    .body{
+        width: 40vw;
+        margin-left: auto;
+    }
+    .actionButtons{
+        width: 40%;
+    }
+    .chat{
+        display: block;
+        width: 60vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    mat-drawer{
+        width: 10vw;
+        align-items: center;
+        justify-items: center;  
+    }
+    .matches{
+        width: 100%;
+        border-radius: none;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: none;
+        height: 50px;
+    }
+}

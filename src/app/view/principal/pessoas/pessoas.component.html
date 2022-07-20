@@ -13,3 +13,11 @@
     <button mat-button class="color-1"> <fa-icon [icon]="icons.menu"></fa-icon> </button>
   </div>
 </div>
+<mat-drawer-container class="chat">
+  <mat-drawer mode="side" opened>
+    <button mat-raised-button *ngFor="let match of matches" class="matches"> {{ match.photo }} {{ match.name }} </button>
+  </mat-drawer>
+  <mat-drawer-content>
+    Main content
+  </mat-drawer-content>
+</mat-drawer-container>
