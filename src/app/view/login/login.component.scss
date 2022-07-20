@@ -81,7 +81,8 @@ input:focus{
     font: 500 18px Arial;
     border: none;
 }
-.button:active{
+.button:active, .button:hover{
+    cursor: pointer;
     box-shadow: 0 0 16px rgb(203, 18, 89);
     transition: all 0.3s linear;
 }
