@@ -34,7 +34,12 @@ export class LoginComponent implements OnInit {
       }else{
         this.snack.onMensagem('Email ou Senha incorretos, tente novamente.', '', 2);
       }
-    })
+    },
+    (err)=>{
+      console.error('Error: ' + err);
+      
+    }
+    )
   }
   public lang(lang: string){
     this._user.setLanguage(lang)

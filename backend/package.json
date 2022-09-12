@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json": "json-server --watch --no-cors db.json",
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruan-Castro/api.git"
+  },
+  "keywords": [],
+  "author": "Antonio Marcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruan-Castro/api/issues"
+  },
+  "homepage": "https://github.com/Ruan-Castro/api#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
